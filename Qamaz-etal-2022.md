@@ -5,9 +5,7 @@ GPS-denied environment
 Yousef Qamaz (<y_qama01@uni-muenster.de>), Angela Schwering
 (<schwering@uni-muenster.de>), Janina Bistron (<bistron.wwu@gmail.com>)
 
-\#install.packages(“here”)
-
-options(scipen=999) theme\_ \# Preliminaries
+# Preliminaries
 
 ### Loading data
 

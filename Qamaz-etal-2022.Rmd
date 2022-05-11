@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, cache=TRUE)
 require(rmarkdown)
 require(markdown)
 require(tinytex)
+require(codetools)
 ```
 
 # Preliminaries
