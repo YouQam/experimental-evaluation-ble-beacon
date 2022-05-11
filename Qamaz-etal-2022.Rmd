@@ -5,7 +5,17 @@ output: github_document
 editor_options: 
   chunk_output_type: inline
 ---
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, cache=TRUE)
+require(rmarkdown)
+require(markdown)
+require(tinytex)
+```
 
+#install.packages("here")
+
+options(scipen=999)
+theme_
 # Preliminaries
 
 ### Loading data
