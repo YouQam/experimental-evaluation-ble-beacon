@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YouQam/experimental-evaluation-ble-beacon/HEAD)
 
-This repository contains data and code that reproduce published results in this paper:
+This repository contains data and code that reproduce published results in the paper:
 
 Qamaz, Y., Schwering, A., Bistron, J. (2022). Experimental evaluation of using BLE beacon for outdoor positioning in GPS-denied environment. 
 
