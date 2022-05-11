@@ -12,10 +12,6 @@ require(markdown)
 require(tinytex)
 ```
 
-#install.packages("here")
-
-options(scipen=999)
-theme_
 # Preliminaries
 
 ### Loading data
