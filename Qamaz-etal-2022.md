@@ -1,18 +1,15 @@
----
-title: "Data and code that reproduce published results in paper: Experimental evaluation of using BLE beacon for outdoor positioning in GPS-denied environment"
-author: "Yousef Qamaz (<y_qama01@uni-muenster.de>), Angela Schwering (<schwering@uni-muenster.de>), Janina Bistron (<bistron.wwu@gmail.com>)"
-output: github_document
-editor_options: 
-  chunk_output_type: inline
----
-```{r global_options, include=FALSE}
-#knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, cache=TRUE)
-```
+Data and code that reproduce published results in this paper:
+Experimental evaluation of using BLE beacon for outdoor positioning in
+GPS-denied environment
+================
+Yousef Qamaz (<y_qama01@uni-muenster.de>), Angela Schwering
+(<schwering@uni-muenster.de>), Janina Bistron (<bistron.wwu@gmail.com>)
 
 # Preliminaries
 
 ### Loading data
-```{r}
+
+``` r
 # read measured distances using GPS
 gps_dis_app = read.csv('data/ds_gps_app.csv',header=TRUE, sep=",")
 # read actual distances using measurement tape (when tasks were achieved using GPS)
@@ -25,7 +22,7 @@ ble_dis_real = read.csv('data/ds_ble_real.csv',header=TRUE, sep=",")
 
 #### Calculating distance-error of all tasks using GPS and BLE beacons
 
-``` {r}
+``` r
 # calculating GPS distance-error 
 gps_dis_error = abs(gps_dis_app[,-c(1)] - gps_dis_real[,-c(1)])
 # update dataframe header
@@ -42,17 +39,19 @@ ble_dis_error <- cbind(players, ble_dis_error)
 ```
 
 #### Calculating mean distance-error
-```{r}
+
+``` r
 # gps
 mean_gps_dis_error <- colMeans(gps_dis_error[,-c(1)], na.rm = TRUE)
 # ble beacons
 mean_ble_dis_error <- colMeans(ble_dis_error[,-c(1)], na.rm = TRUE)
 ```
+
 # 4.4 Results
 
 > Figure 4
 
-``` {r out.width = "100%"}
+``` r
 tasks_labels = c(  
   "In an open space 1", 
   "In an open space 2",
@@ -112,3 +111,5 @@ legend('topright', legend=c("Using GPS", "Using Estimote BLE beacons"),
        col=c("red", "blue"), pch = c(9, 7), cex=0.7, inset=0.01, lwd=c(NA, NA, 2))
 grid()
 ```
+
+<img src="Qamaz-etal-2022_files/figure-gfm/unnamed-chunk-4-1.png" width="100%" />
