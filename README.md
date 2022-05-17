@@ -10,9 +10,9 @@ Qamaz, Y., Schwering, A., Bistron, J. (2022). Experimental evaluation of using B
 
 There are 3 main ways in which you can use this repository:
 
-1. You can open 'Qamaz-etal-2022.md' by clicking it on the file list above. The file shows what code was used to achieve results from the paper.
+1. You can open `Qamaz-etal-2022.md` by clicking it on the file list above. The file shows what code was used to achieve results from the paper.
 
-2. You can click on the 'lunch binder' button above. This will open an interactive session of RStudio in your web browser. You are able to change the code there by selecting the file 'Qamaz-etal-2022.Rmd' and re-generating the analysis with the 'Knit' button. Rememeber any changes will be lost as soon as you close the browser window.
+2. You can click on the 'Launch Binder' button above. This will open an interactive session of RStudio in your web browser. You are able to change the code there by selecting the file `Qamaz-etal-2022.Rmd` and re-generating the analysis with the 'Knit' button. Remember any changes will be lost as soon as you close the browser window.
 
 3. You can download the code and data and try to run it locally. This is likely to fail in the future when software versions change. The analysis does work on the session listed below.
 
@@ -40,4 +40,5 @@ loaded via a namespace (and not attached):
 ```
 
 # License
+
 MIT
